@@ -13,11 +13,10 @@ def premier(n):
             if n % i == 0:
                 res = False
     return res
-  
+
 def prime_numbers(nb):
     if type(nb) != int or nb < 0:
         return None
-
     primes = []
     i = 2
     while (len(primes) != nb):
@@ -25,5 +24,4 @@ def prime_numbers(nb):
             primes.append(i)
         i+=1
     return primes 
-
 prime_numbers(4)   #[2, 3, 5, 7]
