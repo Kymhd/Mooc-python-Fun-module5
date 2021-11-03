@@ -14,9 +14,8 @@ def distance_mots(a, b):
 
 def correcteur(mot, liste_mots):
     for i in liste_mots:
-        if len(mot) == len(i):
-            if distance_mots(mot, i) == 1:
-                return i
+        if len(mot) == len(i) and distance_mots(mot, i) == 1:
+            return i
     return mot
 
 print(correcteur("chat", ["chien", "chat", "train", "voiture", "bonjour", "merci"])) #chat
